@@ -1,0 +1,227 @@
+/* css reset */
+*{
+    margin:0;
+    padding:0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+#logo{
+    margin:10px 40px;
+
+}
+#logo img{
+    height:51px;
+    margin:3px 6px;
+}
+
+
+
+
+/* Navigation bar */
+
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+}
+
+#navbar ul{
+    display:flex;
+    
+}
+
+#navbar::before{
+    content: "";
+    height:100%;
+    width:100%;
+    opacity:0.4;
+    background-color: black;
+    position: absolute;
+    z-index: -1;
+    top:0px;
+    left:0px;
+    
+
+}
+
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color:white;
+    display:block;
+    text-decoration: none;
+    padding:3px 22px;
+    border-radius: 20px;
+
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+
+}
+
+
+#home{
+    display: flex;
+    padding:4px 200px;
+    flex-direction: column;
+    justify-content: center;
+    height: 550px;
+    align-items: center;
+    
+}
+#home::before{
+    content: "";
+    height:621px;
+    width:100%;
+    top:0px;
+    left:0px;
+    background: url('bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;   
+}
+#home h1{
+    color:white;
+    text-align: center;
+}
+
+.h-primary{
+    font-size: 2.6rem;
+    padding:90px 0px 0px 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding:12px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+
+#home p{
+font-size: 1.3rem;
+font-family: 'Ubuntu', sans-serif;
+color:white;
+text-align: center;
+
+}
+.btn{
+    padding:6px 20px;
+    border: 2px solid white;
+    background-color: rgb(114, 51, 51);
+    color:white;
+    margin:17px;
+    font-size:1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+text-align: center;
+}
+
+#Services{
+    margin:20px;
+    display:flex;
+    padding:10px;
+    
+}
+#Services .box{
+    border:2px solid rgb(221, 130, 130);
+    background-color: rgb(219, 207, 207);
+    border-radius: 24px;
+    margin:12px;
+    padding:19px;
+}
+#Services .box img{
+    height:160px;
+    display: block;
+    margin:auto;
+}
+#service .box p{
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    justify-content: center;
+    text-align: center;
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#client-section{
+
+    height:330px;
+}
+#client-section::before{
+    content:"";
+    z-index: -1;
+    position: absolute;
+    height:380px;
+    width: 100%;
+    background: url('/css/bg4.jpg') no-repeat center center/cover;
+    opacity: 0.9;
+
+}
+#clients img{
+
+height: 140px;
+
+}
+
+.client-item{
+    padding:34px;
+}
+
+#contact{
+    position: relative;
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    background: url('/css/contacts.jpg') no-repeat center center/cover;
+    opacity: 0.4;
+
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:0.4rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width:40%;
+}
+#contact-box label{
+    font-size:1.3rem;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+footer{
+    background-color: black;
+    color: white;
+    padding:5px;
+}
